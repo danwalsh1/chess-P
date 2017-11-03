@@ -1,4 +1,4 @@
-#>> Chess - V1.0
+#>> Chess
 #>> Daniel Walsh
 
 #######################################
@@ -7,6 +7,8 @@
 
 import tkinter as tk
 import tkinter.font
+import tkinter.messagebox
+import ChessValidation as cv
 
 #######################################
 ########## Global Variables ###########
@@ -80,6 +82,7 @@ def validateMove(pos):
     return False
 
 def btnFunction(pos):
+    ''' Function is run whenever a button is pressed '''
     global currSelected
     global currSelectedColour
     global currSelectedBtn
